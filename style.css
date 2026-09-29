@@ -1,0 +1,81 @@
+.credits-badge-wrapper {
+  position: absolute !important;
+  top: 8px !important;
+  left: 8px !important;
+  display: flex !important;
+  gap: 5px !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+
+.credits-badge {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  padding: 3px 7px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+  letter-spacing: 0.3px !important;
+  line-height: 1.2 !important;
+  cursor: default !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* --- Tier Colors (Rank & Score) --- */
+.tier-standard {
+  background: rgba(15, 23, 42, 0.9) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+}
+
+.tier-rare {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #60a5fa !important;
+  border: 1px solid #3b82f6 !important;
+}
+
+.tier-legendary {
+  background: rgba(24, 9, 39, 0.95) !important;
+  color: #d8b4fe !important;
+  border: 1.5px solid #a855f7 !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5) !important;
+}
+
+.tier-mythic {
+  background: linear-gradient(135deg, #451a03, #000000) !important;
+  color: #fde047 !important;
+  border: 1.5px solid #eab308 !important;
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.7) !important;
+}
+
+/* --- Eights Badges (Bronze, Silver, Gold) --- */
+/* Bronze: 3 Eights */
+.eights-bronze {
+  background: rgba(43, 23, 15, 0.95) !important;
+  color: #f97316 !important;
+  border: 1.5px solid #c2410c !important;
+  box-shadow: 0 0 8px rgba(194, 65, 12, 0.5) !important;
+}
+
+/* Silver: 4 Eights */
+.eights-silver {
+  background: rgba(30, 41, 59, 0.95) !important;
+  color: #e2e8f0 !important;
+  border: 1.5px solid #94a3b8 !important;
+  box-shadow: 0 0 10px rgba(226, 232, 240, 0.5) !important;
+}
+
+/* Gold: 5+ Eights (Ultra Rare) */
+.eights-gold {
+  background: linear-gradient(135deg, #713f12, #ca8a04) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #fef08a !important;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.9) !important;
+}
+
+.credits-badge-wrapper.inline-view {
+  position: static !important;
+  display: inline-flex !important;
+  margin-left: 8px !important;
+  vertical-align: middle !important;
+}

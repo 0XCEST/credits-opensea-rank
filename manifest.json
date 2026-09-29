@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Credits Rarity Rank for OpenSea",
+  "version": "1.0.1",
+  "description": "Displays official rarity ranking, scores, and eights pattern badges for Jack Butcher's Credits on OpenSea. Built by @CEST_nft.",
+  "author": "CEST_nft",
+  "homepage_url": "https://x.com/CEST_nft",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://opensea.io/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["ranks.json", "icon16.png", "icon48.png", "icon128.png"],
+      "matches": ["https://opensea.io/*"]
+    }
+  ]
+}
